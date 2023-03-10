@@ -1,0 +1,63 @@
+
+//  Specify which C source files should be compiled for this simulation
+
+compile		= "lab3.c mobility.c -lm"
+icontitle	= "%n"
+
+//bandwidth:  24Kbps
+
+//minmessagesize  = 750bytes
+//maxmessagesize  = 750bytes
+
+//messagerate     =100ms
+//propagationdelay=350ms
+
+
+//  Define the area of our simulation
+mapwidth	= 600m
+mapheight	= 400m
+
+var anchors = "5, 20"
+var mobiles = "100, 105, 110, 115, 120"
+
+//  All mobile nodes just use their default attributes, with one WLAN link
+//  Comment out MOBs for fewer nodes (with C comments), or simply add more
+
+mobile MOB00 { address = 100, x= 75, y= 50, wlan { }}
+mobile MOB01 { address = 105, x= 125, y= 50, wlan { } }
+mobile MOB02 { address = 110, x= 50, y= 200, wlan { }}
+mobile MOB03 { address = 115, x= 100, y= 200, wlan { }}
+mobile MOB04 { address = 120, x= 150, y= 200, wlan { }}
+
+accesspoint ANCHOR1 { 
+      address = 5,
+      x = 100,
+      y = 100,
+      wlan { }
+}
+accesspoint ANCHOR2 {
+      address = 20,
+      x = 325,
+      y = 250,
+      wlan { }
+}
+
+
+/*
+mobile MOB05 { wlan { } }
+mobile MOB06 { wlan { } }
+mobile MOB07 { wlan { } }
+mobile MOB08 { wlan { } }
+mobile MOB09 { wlan { } }
+
+mobile MOB10 { wlan { } }
+mobile MOB11 { wlan { } }
+mobile MOB12 { wlan { } }
+mobile MOB13 { wlan { } }
+mobile MOB14 { wlan { } }
+mobile MOB15 { wlan { } }
+mobile MOB16 { wlan { } }
+mobile MOB17 { wlan { } }
+mobile MOB18 { wlan { } }
+mobile MOB19 { wlan { } }
+ */

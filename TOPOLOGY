@@ -1,0 +1,19 @@
+
+compile		= "georouting.c mobility.c -lm"
+icontitle	= "%n"
+
+mapwidth	= 400m
+mapheight	= 400m
+
+mobile M1 { wlan { } }
+mobile M2 { wlan { } }
+mobile M3 { wlan { } }
+mobile M4 { wlan { } }
+mobile M5 { wlan { } }
+mobile M6 { wlan { } }
+mobile M7 { wlan { } }
+mobile M8 { wlan { } }
+mobile M9 { wlan { } }
+mobile M10 { wlan { } }
+mobile M11 { wlan { } }
+mobile M12 { wlan { } }
